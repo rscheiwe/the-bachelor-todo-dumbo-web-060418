@@ -54,7 +54,6 @@ end
 
 def get_average_age_for_season(data, season)
   # code here
-
   total = 0
   num = 0
   data.each do |key, value|
@@ -66,5 +65,6 @@ def get_average_age_for_season(data, season)
       end
     end
   end
+  #.ceil, other uses of .to_f, not working.
   (total.to_f / num).round(0)
 end
